@@ -3,7 +3,7 @@ package claudiopostiglione.u5w3d3.adapter;
 import java.time.LocalDate;
 
 
-public class InfoAdapter extends UserData implements DataSource {
+public class InfoAdapter implements DataSource {
 
     private Info infoUser;
 
@@ -13,7 +13,7 @@ public class InfoAdapter extends UserData implements DataSource {
 
     @Override
     public String getNomeCompleto() {
-        return infoUser.getNome() + infoUser.getCognome();
+        return infoUser.getNome() + " " + infoUser.getCognome();
     }
 
     @Override
@@ -25,8 +25,4 @@ public class InfoAdapter extends UserData implements DataSource {
         return annoAttuale - infoUser.getDataDiNascita().getYear();
     }
 
-    @Override
-    public void getData(DataSource ds) {
-        super.getData(ds);
-    }
 }
