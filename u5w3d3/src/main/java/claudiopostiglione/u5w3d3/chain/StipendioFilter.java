@@ -11,7 +11,7 @@ public class StipendioFilter extends GerarchiaMilitareBaseFilter {
             System.out.println("L'ufficiale " + ufficiale.nome + " " + ufficiale.cognome + " percepisce l'importo di " + importoPercepito + " € avendo come stipendio: " + ufficiale.stipendio + " €");
             this.nextFilter(ufficiale);
         } else {
-            System.out.println("L'ufficiale " + ufficiale.nome + ufficiale.cognome + " non percepisce l'importo di " + importoPercepito + "€  avendo come stipendio: " + ufficiale.stipendio + " €");
+            System.out.println("L'ufficiale " + ufficiale.nome + " " + ufficiale.cognome + " non percepisce l'importo di " + importoPercepito + " €  avendo come stipendio: " + ufficiale.stipendio + " €");
         }
     }
 }
